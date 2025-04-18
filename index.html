@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iDirect | Premium iPhones | South Africa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <i class="fab fa-apple logo-icon"></i>
+        <span>i<span class="logo-highlight">Direct</span></span>
+      </a>
+      <div class="nav-actions">
+        <a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a>
+        <a href="#booking" class="btn btn-primary pulse-animate">
+          <i class="fas fa-shopping-bag"></i> Order Now
+        </a>
+      </div>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Latest iPhones <br>Delivered to Your Door</h1>
+      <p class="hero-subtitle">South Africa's premium selection with next-day delivery</p>
+      <a href="#booking" class="btn btn-hero">
+        <span>Order Now</span>
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <div class="section-header">
+        <h2>Order Your iPhone</h2>
+        <p>Experience the convenience of premium device delivery</p>
+      </div>
+      
+      <div class="booking-card glass-effect">
+        <div class="booking-form">
+          <div class="form-progress">
+            <div class="progress-step active" data-step="1">
+              <div class="step-number">1</div>
+              <div class="step-label">Details</div>
+            </div>
+            <div class="progress-step" data-step="2">
+              <div class="step-number">2</div>
+              <div class="step-label">Selection</div>
+            </div>
+            <div class="progress-step" data-step="3">
+              <div class="step-number">3</div>
+              <div class="step-label">Payment</div>
+            </div>
+            <div class="progress-bar"></div>
+          </div>
+
+          <form id="bookingForm">
+            <!-- Step 1: Personal Details -->
+            <div class="form-step active" data-step="1">
+              <div class="form-group floating-label">
+                <input type="text" id="fullname" placeholder=" " required>
+                <label for="fullname"><i class="fas fa-user"></i> Full Name</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group floating-label">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group floating-label">
+                <input type="tel" id="phone" placeholder=" " required>
+                <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group floating-label">
+                <textarea id="address" placeholder=" " required></textarea>
+                <label for="address"><i class="fas fa-map-marker-alt"></i> Delivery Address</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-actions">
+                <button type="button" class="btn btn-next">
+                  <span>Continue</span>
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: iPhone Selection -->
+            <div class="form-step" data-step="2">
+              <div class="iphone-selection">
+                <div class="iphone-card selected" data-price="24999">
+                  <div class="iphone-image" style="background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096')"></div>
+                  <h3>iPhone 15 Pro Max</h3>
+                  <p class="iphone-description">6.7" Super Retina XDR, Titanium, 256GB</p>
+                  <div class="iphone-price">R24,999</div>
+                  <div class="iphone-selector">
+                    <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" value="1" min="0" max="2">
+                    <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+
+                <div class="iphone-card" data-price="19999">
+                  <div class="iphone-image" style="background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692927227007')"></div>
+                  <h3>iPhone 15 Pro</h3>
+                  <p class="iphone-description">6.1" Super Retina XDR, Titanium, 128GB</p>
+                  <div class="iphone-price">R19,999</div>
+                  <div class="iphone-selector">
+                    <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" value="0" min="0" max="2">
+                    <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+
+                <div class="iphone-card" data-price="15999">
+                  <div class="iphone-image" style="background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692927229491')"></div>
+                  <h3>iPhone 15</h3>
+                  <p class="iphone-description">6.1" Super Retina XDR, Aluminum, 128GB</p>
+                  <div class="iphone-price">R15,999</div>
+                  <div class="iphone-selector">
+                    <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" value="0" min="0" max="2">
+                    <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accessories-section">
+                <h3>Recommended Accessories</h3>
+                <div class="accessory-option">
+                  <input type="checkbox" id="airpods" data-price="3999">
+                  <label for="airpods">
+                    <i class="fas fa-headphones"></i> AirPods Pro (2nd Gen) - R3,999
+                  </label>
+                </div>
+                <div class="accessory-option">
+                  <input type="checkbox" id="case" data-price="999">
+                  <label for="case">
+                    <i class="fas fa-mobile-alt"></i> Silicone Case - R999
+                  </label>
+                </div>
+                <div class="accessory-option">
+                  <input type="checkbox" id="charger" data-price="499">
+                  <label for="charger">
+                    <i class="fas fa-bolt"></i> 20W USB-C Charger - R499
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-prev">
+                  <i class="fas fa-chevron-left"></i>
+                  <span>Back</span>
+                </button>
+                <button type="button" class="btn btn-next">
+                  <span>Continue</span>
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Payment -->
+            <div class="form-step" data-step="3">
+              <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-items">
+                  <!-- Items will be added dynamically -->
+                </div>
+                <div class="summary-total">
+                  <div class="total-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">R0</span>
+                  </div>
+                  <div class="total-row">
+                    <span>Delivery:</span>
+                    <span id="delivery-fee">R150</span>
+                  </div>
+                  <div class="total-row grand-total">
+                    <span>Total:</span>
+                    <span id="grand-total">R150</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment-methods">
+                <h3>Payment Method</h3>
+                <div class="payment-options">
+                  <label class="payment-option">
+                    <input type="radio" name="payment" value="Credit Card" checked>
+                    <div class="payment-card">
+                      <i class="fas fa-credit-card"></i>
+                      <span>Credit Card</span>
+                    </div>
+                  </label>
+                  <label class="payment-option">
+                    <input type="radio" name="payment" value="PayFast">
+                    <div class="payment-card">
+                      <i class="fas fa-money-bill-transfer"></i>
+                      <span>PayFast</span>
+                    </div>
+                  </label>
+                  <label class="payment-option">
+                    <input type="radio" name="payment" value="EFT">
+                    <div class="payment-card">
+                      <i class="fas fa-university"></i>
+                      <span>Bank Transfer</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-prev">
+                  <i class="fas fa-chevron-left"></i>
+                  <span>Back</span>
+                </button>
+                <button type="submit" class="btn btn-submit">
+                  <i class="fas fa-lock"></i>
+                  <span>Complete Order</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confirmation Modal -->
+  <div class="modal" id="confirmationModal">
+    <div class="modal-content">
+      <div class="modal-success">
+        <div class="success-animation">
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+          </svg>
+        </div>
+        <h2>Order Confirmed!</h2>
+        <p>Thank you for your order. Your iPhone will be shipped within 24 hours.</p>
+        <div class="order-details">
+          <h3>Order Summary</h3>
+          <div id="orderDetails">
+            <!-- Order details will be inserted here -->
+          </div>
+        </div>
+        <button class="btn btn-close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
